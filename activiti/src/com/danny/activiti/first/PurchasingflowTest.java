@@ -46,13 +46,13 @@ public class PurchasingflowTest {
 
 		// 部署bpmn文件和png文件
 		// bpmn文件名
-		String resourceName_bpmn = "purchasingflow01.bpmn";
+		String resourceName_bpmn = "flow01.bpmn";
 		InputStream inputStream_bpmn = this.getClass().getClassLoader()
-				.getResourceAsStream("diagram/purchasingflow01.bpmn");
+				.getResourceAsStream("diagram/flow01.bpmn");
 
-		String resourceName_png = "purchasingflow01.png";
+		String resourceName_png = "flow01.png";
 		InputStream inputStream_png = this.getClass().getClassLoader()
-				.getResourceAsStream("diagram/purchasingflow01.png");
+				.getResourceAsStream("diagram/flow01.png");
 
 		// 部署对象
 		Deployment deployment = repositoryService.createDeployment()
