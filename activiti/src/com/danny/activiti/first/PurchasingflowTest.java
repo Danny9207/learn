@@ -73,7 +73,7 @@ public class PurchasingflowTest {
 		RuntimeService runtimeService = processEngine.getRuntimeService();
 
 		// 流程定义key（流程定义的标识 ）
-		String processDefinitionKey = "purchasingflow";
+		String processDefinitionKey = "caigouflow";
 		// 启动流程实例
 		// 根据流程定义的key启动流程，根据key找最高版本的流程定义
 		ProcessInstance processInstance = runtimeService
@@ -93,9 +93,9 @@ public class PurchasingflowTest {
 		// 查询任务使用TaskService
 		TaskService takService = processEngine.getTaskService();
 		// 流程定义key（流程定义的标识 ）
-		String processDefinitionKey = "purchasingflow";// 采购流程 标识
+		String processDefinitionKey = "caigouflow";// 采购流程 标识
 		// 任务 负责人
-		String assignee = "wangwu";
+		String assignee = "zhangsan";
 		// 创建查询对象
 		TaskQuery taskQuery = takService.createTaskQuery();
 
@@ -123,7 +123,7 @@ public class PurchasingflowTest {
 		// 查询任务使用TaskService
 		TaskService takService = processEngine.getTaskService();
 		//任务id
-		String taskId="1004";
+		String taskId="104";
 		takService.complete(taskId);
 		
 		System.out.println("完成任务："+taskId);
